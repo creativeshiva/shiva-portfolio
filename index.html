@@ -1,145 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shiva Kumar G | E-commerce Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva Kumar G | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
     }
     body {
-      background: #f7f9fc;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background: linear-gradient(135deg, #8DBCC7, #8DBCC7);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      border-bottom: 1px solid #ddd;
     }
     header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #3f51b5;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10%;
+      background: #f9f9f9;
+    }
+    .hero .profile {
+      flex: 1 1 300px;
+      text-align: center;
+      background: #f0e8df;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .hero .profile h2 {
+      margin-top: 20px;
+      font-size: 1.4rem;
+    }
+    .hero .profile p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .hero .content {
+      flex: 1 1 400px;
+      padding: 30px;
+    }
+    .hero .content h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
+    .hero .content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
     }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .buttons a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .buttons .btn-primary {
+      background: #3f51b5;
+      color: #fff;
+    }
+    .buttons .btn-secondary {
+      border: 1px solid #000;
+      color: #000;
+    }
+    .section {
+      padding: 60px 10%;
     }
     h2 {
-      font-size: 1.8rem;
-      color: #131D4F;
+      color: #3f51b5;
       margin-bottom: 20px;
     }
     .job {
       margin-bottom: 25px;
     }
-    .job h3 {
-      font-size: 1.2rem;
-      color: #333;
-    }
-    .job span {
-      font-size: 0.9rem;
-      color: #777;
-    }
-    ul.skills {
-      list-style: none;
+    .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
-    ul.skills li {
-      background: #e0e4ff;
-      color: #333;
-      padding: 8px 12px;
+    .skills span {
+      background: #e0e0ff;
+      padding: 10px;
       border-radius: 6px;
       font-size: 0.9rem;
     }
-    .contact {
-      background: #fff;
-      border-top: 1px solid #ddd;
-      padding: 30px 20px;
+    footer {
+      background: #f5f5f5;
       text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
     }
-    .contact p {
-      margin: 8px 0;
-      color: #555;
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 30px 5%;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Shiva Kumar G</h1>
-    <p>E-commerce Operations & Project Management Specialist</p>
+    <h1>Shiva Kumar G / E-commerce Specialist</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>E-commerce professional with strong expertise in project management, BRD creation, and collaboration with tech teams for smooth implementation. Proven record in daily operations, customer experience, catalog, and marketplace management. Skilled in Power BI, Excel, and automation tools for driving efficient workflows.</p>
+  <section class="hero">
+    <div class="profile">
+      <div style="width: 150px; height: 150px; margin: auto; background: #ccc; border-radius: 50%;"></div>
+      <h2>Shiva Kumar G</h2>
+      <p>Project Manager / E-commerce Ops</p>
+    </div>
+    <div class="content">
+      <h1>Hello</h1>
+      <p>Here's who I am & what I do — E-commerce project specialist with expertise in managing operations, catalog, automation, and customer experience.</p>
+      <div class="buttons">
+        <a href="#experience" class="btn-primary">Resume</a>
+        <a href="#projects" class="btn-secondary">Projects</a>
+      </div>
+    </div>
   </section>
 
-  <section>
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>E-commerce professional with expertise in project management, BRDs, cross-team coordination, and platform operations. Skilled in Power BI, Excel, and automation tools for optimized workflows.</p>
+  </section>
+
+  <section class="section" id="experience">
     <h2>Experience</h2>
     <div class="job">
       <h3>Assistant Manager - Ecommerce | Namdhari Agro Fresh Pvt Ltd</h3>
-      <span>June 2020 – Present</span>
-      <p>Led website and app testing, BRD creation, e-commerce operations, logistics, customer service, team coordination, catalog management, and process improvements.</p>
+      <p>June 2020 – Present</p>
+      <p>Led testing, BRDs, logistics, team coordination, catalog updates, and customer journey improvements.</p>
     </div>
     <div class="job">
-      <h3>Senior Business Analyst | ROYAL CLASSIC MILLS PVT LTD</h3>
-      <span>July 2019 – July 2025</span>
-      <p>Handled marketplace sales, listings, SEO, content optimization, campaign strategy, and team training for superior service delivery.</p>
+      <h3>Senior Business Analyst | Royal Classic Mills Pvt Ltd</h3>
+      <p>July 2019 – July 2025</p>
+      <p>Managed marketplace operations, SEO, campaigns, and customer service training.</p>
     </div>
-    <div class="job">
-      <h3>Catalog Executive | Waltzz India Pvt Ltd</h3>
-      <span>Nov 2018 – July 2025</span>
-      <p>Managed multi-vendor product catalogs across major platforms, ensuring accuracy, standards, and vendor coordination.</p>
-    </div>
-    <div class="job">
-      <h3>Catalog Manager | Kushal's Fashion Jewellery</h3>
-      <span>Oct 2015 – July 2025</span>
-      <p>Oversaw catalog uploads, order processing, tracking, billing, and team training across marketplaces like Flipkart and Amazon.</p>
-    </div>
-    <div class="job">
-      <h3>Data Entry Operator | Karvy Computershare Pvt Ltd</h3>
-      <span>May 2014 – July 2025</span>
-      <p>Handled UTI data processing, application verification, and maintained productivity benchmarks.</p>
-    </div>
+    <!-- Additional jobs can go here -->
   </section>
 
-  <section>
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <p>Details of personal or professional projects can be added here.</p>
+  </section>
+
+  <section class="section">
     <h2>Skills</h2>
-    <ul class="skills">
-      <li>Project Management</li>
-      <li>BRD & UAT</li>
-      <li>Power BI</li>
-      <li>Power Automate</li>
-      <li>Excel (Power Query, Power Pivot)</li>
-      <li>E-commerce Operations</li>
-      <li>Catalog Management</li>
-      <li>Marketplace Management</li>
-      <li>Process Automation</li>
-      <li>Postman (API Testing)</li>
-      <li>Cross-Functional Team Leadership</li>
-    </ul>
+    <div class="skills">
+      <span>Project Management</span>
+      <span>Power BI</span>
+      <span>Power Automate</span>
+      <span>Excel</span>
+      <span>BRDs</span>
+      <span>Catalog Management</span>
+      <span>Team Leadership</span>
+    </div>
   </section>
 
-  <div class="contact">
+  <section class="section" id="contact">
     <h2>Contact</h2>
     <p>Email: shivakumar.g.1000@gmail.com</p>
     <p>Phone: 9901606739</p>
     <p>Location: Bangalore, Karnataka</p>
-  </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Shiva Kumar G | All Rights Reserved
+  </footer>
 </body>
 </html>
-
